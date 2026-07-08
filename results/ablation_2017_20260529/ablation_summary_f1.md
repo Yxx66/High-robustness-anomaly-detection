@@ -1,0 +1,36 @@
+# Ablation Summary (F1)
+
+| group | run_id | model | train_regime | f1__clean | f1__fgsm | f1__pgd | f1__transfer_pgd |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| a | a_no_fs_no_aug | RidgeClassifier | baseline | 0.9746 | 0.2017 | 0.1553 | 0.1296 |
+| a | a_no_fs_no_aug | SGDClassifier | baseline | 0.9775 | 0.1276 | 0.1287 | 0.1489 |
+| b | b_fs_forward_only | RidgeClassifier | baseline | 0.9576 | 0.9565 | 0.9565 | 0.9565 |
+| b | b_fs_forward_only | SGDClassifier | baseline | 0.9670 | 0.9670 | 0.9670 | 0.9670 |
+| c | c_fgsm_only | RidgeClassifier | adv_train | 0.9709 | 0.9871 | 0.9817 | 0.9402 |
+| c | c_fgsm_only | RidgeClassifier | baseline | 0.9746 | 0.4431 | 0.2385 | 0.6416 |
+| c | c_fgsm_only | SGDClassifier | adv_train | 0.9745 | 0.9988 | 0.9963 | 0.6600 |
+| c | c_fgsm_only | SGDClassifier | baseline | 0.9775 | 0.1262 | 0.1226 | 0.1836 |
+| d | d_owc_only | RidgeClassifier | adv_train | 0.9731 | 0.2426 | 0.2105 | 0.5970 |
+| d | d_owc_only | RidgeClassifier | baseline | 0.9746 | 0.2335 | 0.1928 | 0.2396 |
+| d | d_owc_only | SGDClassifier | adv_train | 0.9782 | 0.1791 | 0.1677 | 0.2468 |
+| d | d_owc_only | SGDClassifier | baseline | 0.9775 | 0.1218 | 0.1175 | 0.1291 |
+| e | e_fgsm_owc | RidgeClassifier | adv_train | 0.9714 | 0.9862 | 0.9801 | 0.5111 |
+| e | e_fgsm_owc | RidgeClassifier | baseline | 0.9746 | 0.5280 | 0.3266 | 0.3976 |
+| e | e_fgsm_owc | SGDClassifier | adv_train | 0.9748 | 0.9975 | 0.9937 | 0.6026 |
+| e | e_fgsm_owc | SGDClassifier | baseline | 0.9775 | 0.2289 | 0.1459 | 0.1312 |
+| f | f_fs_backward_main | RidgeClassifier | adv_train | 0.9586 | 0.9635 | 0.9627 | 0.9620 |
+| f | f_fs_backward_main | RidgeClassifier | baseline | 0.9656 | 0.9462 | 0.9490 | 0.9449 |
+| f | f_fs_backward_main | SGDClassifier | adv_train | 0.9624 | 0.9859 | 0.9820 | 0.9794 |
+| f | f_fs_backward_main | SGDClassifier | baseline | 0.9762 | 0.3103 | 0.3903 | 0.2312 |
+| f | f_fs_correlation_main | RidgeClassifier | adv_train | 0.9654 | 0.9632 | 0.9616 | 0.9547 |
+| f | f_fs_correlation_main | RidgeClassifier | baseline | 0.9660 | 0.9597 | 0.9577 | 0.9517 |
+| f | f_fs_correlation_main | SGDClassifier | adv_train | 0.9692 | 0.9861 | 0.9854 | 0.9708 |
+| f | f_fs_correlation_main | SGDClassifier | baseline | 0.9684 | 0.9138 | 0.9416 | 0.9157 |
+| f | f_fs_forward_main | RidgeClassifier | adv_train | 0.9616 | 0.9596 | 0.9596 | 0.9596 |
+| f | f_fs_forward_main | RidgeClassifier | baseline | 0.9576 | 0.9565 | 0.9565 | 0.9565 |
+| f | f_fs_forward_main | SGDClassifier | adv_train | 0.9670 | 0.9670 | 0.9670 | 0.9670 |
+| f | f_fs_forward_main | SGDClassifier | baseline | 0.9670 | 0.9670 | 0.9670 | 0.9670 |
+| f | f_fs_importance_main | RidgeClassifier | adv_train | 0.9623 | 0.9724 | 0.9726 | 0.9627 |
+| f | f_fs_importance_main | RidgeClassifier | baseline | 0.9586 | 0.9249 | 0.9401 | 0.9310 |
+| f | f_fs_importance_main | SGDClassifier | adv_train | 0.9682 | 0.9911 | 0.9928 | 0.9860 |
+| f | f_fs_importance_main | SGDClassifier | baseline | 0.9685 | 0.6587 | 0.0910 | 0.2110 |

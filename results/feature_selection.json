@@ -1,0 +1,17 @@
+{
+  "method": "correlation",
+  "n_features_original": 16,
+  "n_features_selected": 10,
+  "selected_features": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    13,
+    14,
+    15
+  ]
+}

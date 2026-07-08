@@ -1,0 +1,82 @@
+[
+  {
+    "model": "SGDClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.9594429283899502,
+    "precision": 0.9647264500205677,
+    "recall": 0.9907065159995776,
+    "f1": 0.9775438962121606,
+    "auc": 0.9580020322656368
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.9540792321445375,
+    "precision": 0.9591043860545957,
+    "recall": 0.9907065159995776,
+    "f1": 0.9746493506493505,
+    "auc": 0.9471070127756223
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "adv_test",
+    "scenario": "baseline_clean_train_adv_test",
+    "accuracy": 0.0724569492801355,
+    "precision": 0.3993775933609959,
+    "recall": 0.08131798500369627,
+    "f1": 0.1351232780556287,
+    "auc": 0.025662232781783513
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "adv_test",
+    "scenario": "baseline_clean_train_adv_test",
+    "accuracy": 0.24277783005551895,
+    "precision": 0.6950082281952825,
+    "recall": 0.2676100961030732,
+    "f1": 0.38642775447960354,
+    "auc": 0.048396905017390635
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "clean_test",
+    "scenario": "adv_train_clean_test",
+    "accuracy": 0.9504093347134657,
+    "precision": 0.956131401754744,
+    "recall": 0.9897560460449889,
+    "f1": 0.972653209485756,
+    "auc": 0.9550165151222487
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "clean_test",
+    "scenario": "adv_train_clean_test",
+    "accuracy": 0.948997835701515,
+    "precision": 0.9544852866306893,
+    "recall": 0.989967261590453,
+    "f1": 0.9719025401762571,
+    "auc": 0.9361164173393006
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "adv_test",
+    "scenario": "adv_train_adv_test",
+    "accuracy": 0.9984944010539193,
+    "precision": 0.9983131259884027,
+    "recall": 1.0,
+    "f1": 0.9991558510077028,
+    "auc": 0.99997373485445
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "adv_test",
+    "scenario": "adv_train_adv_test",
+    "accuracy": 0.975628117060318,
+    "precision": 0.97347316471314,
+    "recall": 0.999894392227268,
+    "f1": 0.9865069028392811,
+    "auc": 0.9927154348404602
+  }
+]

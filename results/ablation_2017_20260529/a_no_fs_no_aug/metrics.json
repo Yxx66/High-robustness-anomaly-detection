@@ -1,0 +1,22 @@
+[
+  {
+    "model": "SGDClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.9594429283899502,
+    "precision": 0.9647264500205677,
+    "recall": 0.9907065159995776,
+    "f1": 0.9775438962121606,
+    "auc": 0.9580020322656368
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.9540792321445375,
+    "precision": 0.9591043860545957,
+    "recall": 0.9907065159995776,
+    "f1": 0.9746493506493505,
+    "auc": 0.9471070127756223
+  }
+]

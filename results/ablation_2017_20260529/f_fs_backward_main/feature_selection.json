@@ -1,0 +1,27 @@
+{
+  "method": "backward",
+  "n_features_original": 78,
+  "n_features_selected": 20,
+  "selected_features": [
+    0,
+    4,
+    5,
+    9,
+    11,
+    12,
+    13,
+    23,
+    25,
+    27,
+    29,
+    37,
+    38,
+    42,
+    46,
+    48,
+    63,
+    66,
+    67,
+    69
+  ]
+}

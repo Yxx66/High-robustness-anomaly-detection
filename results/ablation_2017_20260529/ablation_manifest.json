@@ -1,0 +1,139 @@
+{
+  "created_at": "2026-06-01T14:36:00",
+  "dataset": "F:\\yxx\\project\\lab-ids-anta-main\\lab-ids-anta-main\\Dataset\\normalized_data_2017.csv",
+  "output_root": "F:\\yxx\\project\\lab-ids-anta-main\\hybrid_scheme1\\results\\ablation_2017_20260529",
+  "python": "F:\\yxx\\project\\lab-ids-anta-main\\lab-ids-anta\\Scripts\\python.exe",
+  "shared_args": [
+    "--dataset",
+    "F:\\yxx\\project\\lab-ids-anta-main\\lab-ids-anta-main\\Dataset\\normalized_data_2017.csv",
+    "--epsilon",
+    "0.3",
+    "--clip-value",
+    "3.0",
+    "--eval-attacks",
+    "fgsm",
+    "pgd",
+    "transfer_pgd",
+    "--pgd-steps",
+    "20",
+    "--pgd-random-start",
+    "--epochs",
+    "15",
+    "--transfer-epochs",
+    "10",
+    "--batch-size",
+    "256",
+    "--verbosity",
+    "0",
+    "--owc-epochs",
+    "100",
+    "--max-features",
+    "20",
+    "--fs-cv",
+    "3",
+    "--fs-max-samples",
+    "10000"
+  ],
+  "runs": [
+    {
+      "run_id": "a_no_fs_no_aug",
+      "group": "a",
+      "adversarial_method": "none",
+      "feature_selection": null,
+      "extra_args": [
+        "--adversarial-method",
+        "none"
+      ]
+    },
+    {
+      "run_id": "b_fs_forward_only",
+      "group": "b",
+      "adversarial_method": "none",
+      "feature_selection": "forward",
+      "extra_args": [
+        "--adversarial-method",
+        "none",
+        "--feature-selection",
+        "forward"
+      ]
+    },
+    {
+      "run_id": "c_fgsm_only",
+      "group": "c",
+      "adversarial_method": "fgsm",
+      "feature_selection": null,
+      "extra_args": [
+        "--adversarial-method",
+        "fgsm"
+      ]
+    },
+    {
+      "run_id": "d_owc_only",
+      "group": "d",
+      "adversarial_method": "owc-sawn",
+      "feature_selection": null,
+      "extra_args": [
+        "--adversarial-method",
+        "owc-sawn"
+      ]
+    },
+    {
+      "run_id": "e_fgsm_owc",
+      "group": "e",
+      "adversarial_method": "both",
+      "feature_selection": null,
+      "extra_args": [
+        "--adversarial-method",
+        "both"
+      ]
+    },
+    {
+      "run_id": "f_fs_forward_main",
+      "group": "f",
+      "adversarial_method": "both",
+      "feature_selection": "forward",
+      "extra_args": [
+        "--adversarial-method",
+        "both",
+        "--feature-selection",
+        "forward"
+      ]
+    },
+    {
+      "run_id": "f_fs_backward_main",
+      "group": "f",
+      "adversarial_method": "both",
+      "feature_selection": "backward",
+      "extra_args": [
+        "--adversarial-method",
+        "both",
+        "--feature-selection",
+        "backward"
+      ]
+    },
+    {
+      "run_id": "f_fs_correlation_main",
+      "group": "f",
+      "adversarial_method": "both",
+      "feature_selection": "correlation",
+      "extra_args": [
+        "--adversarial-method",
+        "both",
+        "--feature-selection",
+        "correlation"
+      ]
+    },
+    {
+      "run_id": "f_fs_importance_main",
+      "group": "f",
+      "adversarial_method": "both",
+      "feature_selection": "importance",
+      "extra_args": [
+        "--adversarial-method",
+        "both",
+        "--feature-selection",
+        "importance"
+      ]
+    }
+  ]
+}

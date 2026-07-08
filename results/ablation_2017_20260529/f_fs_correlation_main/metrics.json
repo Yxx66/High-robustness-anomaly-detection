@@ -1,0 +1,82 @@
+[
+  {
+    "model": "SGDClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.9425990401806719,
+    "precision": 0.9502897224763648,
+    "recall": 0.9872214594994192,
+    "f1": 0.9684036050968611,
+    "auc": 0.9169006362184318
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.9377058436059095,
+    "precision": 0.9392518703241896,
+    "recall": 0.9944027880452001,
+    "f1": 0.9660408330768442,
+    "auc": 0.8788819292333077
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "adv_test",
+    "scenario": "baseline_clean_train_adv_test",
+    "accuracy": 0.8491578055895361,
+    "precision": 0.930872042068361,
+    "recall": 0.8973492449044249,
+    "f1": 0.9138033016077861,
+    "auc": 0.6639727564777783
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "adv_test",
+    "scenario": "baseline_clean_train_adv_test",
+    "accuracy": 0.9250964524324833,
+    "precision": 0.9224549439844131,
+    "recall": 1.0,
+    "f1": 0.9596635248809162,
+    "auc": 0.7671592111044657
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "clean_test",
+    "scenario": "adv_train_clean_test",
+    "accuracy": 0.9434459395878423,
+    "precision": 0.942073778664008,
+    "recall": 0.9978878445453585,
+    "f1": 0.9691779065593107,
+    "auc": 0.8470413681514317
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "clean_test",
+    "scenario": "adv_train_clean_test",
+    "accuracy": 0.9370471440669992,
+    "precision": 0.9450738417964799,
+    "recall": 0.9866934206357588,
+    "f1": 0.9654352880392664,
+    "auc": 0.8378214812776025
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "adv_test",
+    "scenario": "adv_train_adv_test",
+    "accuracy": 0.9749694175214078,
+    "precision": 0.9728702086116535,
+    "recall": 0.9997887844545359,
+    "f1": 0.9861458333333335,
+    "auc": 0.9777110144529435
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "adv_test",
+    "scenario": "adv_train_adv_test",
+    "accuracy": 0.9320598475581067,
+    "precision": 0.9305049709617088,
+    "recall": 0.9983102756362868,
+    "f1": 0.963215814143061,
+    "auc": 0.8066313473417759
+  }
+]

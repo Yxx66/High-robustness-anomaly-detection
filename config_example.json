@@ -1,0 +1,59 @@
+{
+  "dataset": {
+    "path": "../lab-ids-anta-main/Dataset/encoded_features_2017.csv",
+    "label_column": "Label",
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "feature_selection": {
+    "enabled": true,
+    "method": "forward",
+    "max_features": 20,
+    "cv_folds": 3,
+    "methods_config": {
+      "forward": {
+        "max_features": 20,
+        "min_improvement": 0.001
+      },
+      "backward": {
+        "min_features": 10,
+        "max_drop": 0.01
+      },
+      "correlation": {
+        "threshold": 0.7,
+        "max_features": 20
+      },
+      "importance": {
+        "top_k": 20,
+        "threshold": null
+      }
+    }
+  },
+  "adversarial_training": {
+    "epsilon": 0.3,
+    "clip_value": 3.0,
+    "dnn_config": {
+      "hidden_layers": [128, 64],
+      "learning_rate": 0.001,
+      "epochs": 15,
+      "batch_size": 256,
+      "verbosity": 1
+    }
+  },
+  "classifiers": {
+    "sgd": {
+      "loss": "log_loss",
+      "max_iter": 2000,
+      "tol": 0.001
+    },
+    "ridge": {
+      "alpha": 1.0
+    }
+  },
+  "output": {
+    "directory": "./results",
+    "save_adversarial_samples": true,
+    "save_metrics": true,
+    "save_feature_selection_info": true
+  }
+}

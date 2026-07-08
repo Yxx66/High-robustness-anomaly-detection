@@ -1,0 +1,18 @@
+{
+  "eval_attacks": [
+    "fgsm",
+    "pgd",
+    "transfer_pgd"
+  ],
+  "epsilon": 0.3,
+  "clip_value": 3.0,
+  "pgd_steps": 20,
+  "pgd_step_size": 0.03,
+  "pgd_random_start": true,
+  "transfer_hidden_layers": [
+    64,
+    32
+  ],
+  "transfer_epochs": 10,
+  "transfer_learning_rate": 0.001
+}

@@ -1,0 +1,8 @@
+{
+  "method": "forward",
+  "n_features_original": 78,
+  "n_features_selected": 1,
+  "selected_features": [
+    11
+  ]
+}

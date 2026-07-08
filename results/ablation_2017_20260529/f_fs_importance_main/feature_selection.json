@@ -1,0 +1,27 @@
+{
+  "method": "importance",
+  "n_features_original": 78,
+  "n_features_selected": 20,
+  "selected_features": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    11,
+    18,
+    20,
+    38,
+    39,
+    41,
+    53,
+    55,
+    63,
+    65,
+    66,
+    67,
+    68
+  ]
+}

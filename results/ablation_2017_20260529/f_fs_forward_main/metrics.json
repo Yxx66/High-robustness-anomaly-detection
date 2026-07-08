@@ -1,0 +1,82 @@
+[
+  {
+    "model": "SGDClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.9391173426178602,
+    "precision": 0.936041913799921,
+    "recall": 1.0,
+    "f1": 0.9669645136584121,
+    "auc": 0.7308243005856215
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.9210501552648913,
+    "precision": 0.9186069072564998,
+    "recall": 1.0,
+    "f1": 0.9575769833645145,
+    "auc": 0.7308243005856215
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "adv_test",
+    "scenario": "baseline_clean_train_adv_test",
+    "accuracy": 0.9391173426178602,
+    "precision": 0.936041913799921,
+    "recall": 1.0,
+    "f1": 0.9669645136584121,
+    "auc": 0.4458283197000812
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "adv_test",
+    "scenario": "baseline_clean_train_adv_test",
+    "accuracy": 0.9188858567799002,
+    "precision": 0.9165618042783854,
+    "recall": 1.0,
+    "f1": 0.9564646464646465,
+    "auc": 0.4458283197000812
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "clean_test",
+    "scenario": "adv_train_clean_test",
+    "accuracy": 0.9391173426178602,
+    "precision": 0.936041913799921,
+    "recall": 1.0,
+    "f1": 0.9669645136584121,
+    "auc": 0.7308243005856215
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "clean_test",
+    "scenario": "adv_train_clean_test",
+    "accuracy": 0.9287663498635551,
+    "precision": 0.9259730099745747,
+    "recall": 1.0,
+    "f1": 0.9615638486925616,
+    "auc": 0.7308243005856215
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "adv_test",
+    "scenario": "adv_train_adv_test",
+    "accuracy": 0.9391173426178602,
+    "precision": 0.936041913799921,
+    "recall": 1.0,
+    "f1": 0.9669645136584121,
+    "auc": 0.4458283197000812
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "adv_test",
+    "scenario": "adv_train_adv_test",
+    "accuracy": 0.9249082525642232,
+    "precision": 0.9222752508035453,
+    "recall": 1.0,
+    "f1": 0.9595662748277259,
+    "auc": 0.4458283197000812
+  }
+]

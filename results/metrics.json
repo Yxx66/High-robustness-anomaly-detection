@@ -1,0 +1,82 @@
+[
+  {
+    "model": "SGDClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.998237219843868,
+    "precision": 0.9882352941176471,
+    "recall": 0.9767441860465116,
+    "f1": 0.9824561403508771,
+    "auc": 0.9994431081847529
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "clean_test",
+    "scenario": "baseline_clean_train_clean_test",
+    "accuracy": 0.9864853521363217,
+    "precision": 0.7912813738441216,
+    "recall": 0.9950166112956811,
+    "f1": 0.8815305371596763,
+    "auc": 0.9965098802770713
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "adv_test",
+    "scenario": "baseline_clean_train_adv_test",
+    "accuracy": 0.8635104507680685,
+    "precision": 0.0009746588693957114,
+    "recall": 0.0016611295681063123,
+    "f1": 0.0012285012285012285,
+    "auc": 0.3357320410466864
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "adv_test",
+    "scenario": "baseline_clean_train_adv_test",
+    "accuracy": 0.0060438176781667085,
+    "precision": 0.00026678523788350376,
+    "recall": 0.0049833887043189366,
+    "f1": 0.0005064573309698658,
+    "auc": 0.0004812590924484563
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "clean_test",
+    "scenario": "adv_train_clean_test",
+    "accuracy": 0.9973138588097037,
+    "precision": 0.9863481228668942,
+    "recall": 0.9601328903654485,
+    "f1": 0.973063973063973,
+    "auc": 0.9989860809355313
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "clean_test",
+    "scenario": "adv_train_clean_test",
+    "accuracy": 0.9531604129942081,
+    "precision": 0.5588235294117647,
+    "recall": 0.34717607973421927,
+    "f1": 0.42827868852459017,
+    "auc": 0.9881352083982575
+  },
+  {
+    "model": "SGDClassifier",
+    "split": "adv_test",
+    "scenario": "adv_train_adv_test",
+    "accuracy": 0.9994963485268195,
+    "precision": 0.9983277591973244,
+    "recall": 0.9916943521594684,
+    "f1": 0.9950000000000001,
+    "auc": 0.9999383189445137
+  },
+  {
+    "model": "RidgeClassifier",
+    "split": "adv_test",
+    "scenario": "adv_train_adv_test",
+    "accuracy": 0.9997481742634097,
+    "precision": 0.9966832504145937,
+    "recall": 0.9983388704318937,
+    "f1": 0.9975103734439834,
+    "auc": 0.9998234746935846
+  }
+]

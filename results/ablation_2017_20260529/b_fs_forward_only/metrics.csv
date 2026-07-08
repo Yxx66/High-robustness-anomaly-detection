@@ -1,0 +1,3 @@
+model,split,scenario,accuracy,precision,recall,f1,auc
+SGDClassifier,clean_test,baseline_clean_train_clean_test,0.9391173426178602,0.936041913799921,1.0,0.9669645136584121,0.7308243005856215
+RidgeClassifier,clean_test,baseline_clean_train_clean_test,0.9210501552648913,0.9186069072564998,1.0,0.9575769833645145,0.7308243005856215

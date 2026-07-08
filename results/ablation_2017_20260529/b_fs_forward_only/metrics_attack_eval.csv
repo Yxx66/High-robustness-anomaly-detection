@@ -1,0 +1,9 @@
+model,split,scenario,accuracy,precision,recall,f1,auc,attack,train_regime,epsilon,pgd_steps,pgd_step_size,pgd_random_start,surrogate
+SGDClassifier,clean_test,attack_eval_baseline,0.9391173426178602,0.936041913799921,1.0,0.9669645136584121,0.7308243005856215,clean,baseline,0.3,0,0.0,False,
+RidgeClassifier,clean_test,attack_eval_baseline,0.9210501552648913,0.9186069072564998,1.0,0.9575769833645145,0.7308243005856215,clean,baseline,0.3,0,0.0,False,
+SGDClassifier,adv_test,attack_eval_baseline,0.9391173426178602,0.936041913799921,1.0,0.9669645136584121,0.4458283197000812,fgsm,baseline,0.3,0,0.0,False,dnn
+RidgeClassifier,adv_test,attack_eval_baseline,0.9188858567799002,0.9165618042783854,1.0,0.9564646464646465,0.4458283197000812,fgsm,baseline,0.3,0,0.0,False,dnn
+SGDClassifier,adv_test,attack_eval_baseline,0.9391173426178602,0.936041913799921,1.0,0.9669645136584121,0.4458283197000812,pgd,baseline,0.3,20,0.03,True,dnn
+RidgeClassifier,adv_test,attack_eval_baseline,0.9188858567799002,0.9165618042783854,1.0,0.9564646464646465,0.4458283197000812,pgd,baseline,0.3,20,0.03,True,dnn
+SGDClassifier,adv_test,attack_eval_baseline,0.9391173426178602,0.936041913799921,1.0,0.9669645136584121,0.4458283197000812,transfer_pgd,baseline,0.3,20,0.03,True,surrogate_dnn
+RidgeClassifier,adv_test,attack_eval_baseline,0.9188858567799002,0.9165618042783854,1.0,0.9564646464646465,0.4458283197000812,transfer_pgd,baseline,0.3,20,0.03,True,surrogate_dnn
