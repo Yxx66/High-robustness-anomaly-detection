@@ -15,6 +15,8 @@ The workflow is encapsulated in `pipeline.py`.
   samples (FGSM or OWC-SAWN), augment the training data, and evaluate the
   lightweight classifiers on both clean and adversarial test sets. Now includes
   optional feature selection step.
+- `agent_orchestrator.py` – minimal agent-style orchestration layer that turns
+  the IDS workflow into task planning, tool calling, and report generation.
 - **Adversarial Generation**:
   - `owc_sawn/` – OWC-SAWN conditional GAN module for adversarial sample generation
     - `generator.py` – Conditional generator with label embedding
@@ -135,6 +137,26 @@ python evaluate_feature_selection.py \
     --dataset ..\lab-ids-anta-main\Dataset\encoded_features_2017.csv \
     --max-features 20
 ```
+
+### 6. Agent mode demo
+
+```powershell
+# Generate an agent plan and markdown report
+python agent_orchestrator.py \
+  --task "评估 2017 数据集在对抗训练下的鲁棒性，并生成报告" \
+  --dataset ..\lab-ids-anta-main\Dataset\encoded_features_2017.csv
+
+# Execute the planned tools end-to-end
+python agent_orchestrator.py \
+  --task "评估 2017 数据集在对抗训练下的鲁棒性，并生成报告" \
+  --dataset ..\lab-ids-anta-main\Dataset\encoded_features_2017.csv \
+  --execute
+```
+
+This mode does not depend on an LLM runtime. It demonstrates the agent pattern
+by separating task understanding, plan generation, tool execution, and report
+output. That is the easiest way to explain the project in an agent internship
+interview.
 
 ### Key Command-Line Flags
 
